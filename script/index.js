@@ -53,8 +53,7 @@ function carousel() {
   if (myIndex > mySlides.length) {myIndex = 1}    
   mySlides[myIndex-1].style.display = "block";  
   captionTextAuto.innerHTML = mySlides[myIndex-1].alt;
-  // setTimeout(carousel, 2000); // Change image every 2 seconds
-
+  setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 
 carousel();
