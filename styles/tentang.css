@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrap-visi-misi {
+    padding: 20px 10px;
+    background-color: darkseagreen;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.wrap-visi-misi .visi-misi {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 10px;
+}
+
+.wrap-visi-misi .visi-misi .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0 50px;
+    border-radius: 8px 30px;
+}
+
+.wrap-visi-misi .visi-misi .card h1 {
+    font-size: 100px;
+}
+
+.wrap-visi-misi .visi {
+    margin-top: 53px;
+}
+
+.wrap-visi-misi .visi .visi-teks {
+    background-color: #ECEDE7;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 0px 30px 15px 8px;
+}
+
+.wrap-visi-misi .visi .visi-teks h1 {
+    font-size: 28px;
+}
+
+.wrap-visi-misi .visi .visi-teks p {
+    font-size: 15px;
+}
+
+.wrap-visi-misi .visi .card {
+    background-color: #D3D8C1;
+}
+
+.wrap-visi-misi .visi .card .teks {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.wrap-visi-misi .visi .card h4 {
+    font-size: 20px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.wrap-visi-misi .visi .card ul {
+    font-size: 18px;
+    padding: 0 10px 0 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.wrap-visi-misi .misi .misi-teks {
+    background-color: #ECEDE7;
+    padding: 20px;
+    border-radius: 0px 30px 15px 8px;
+}
+
+.wrap-visi-misi .misi .card {
+    background-color: #D3D8C1;
+}
+
+.wrap-visi-misi .misi .card .teks {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.wrap-visi-misi .misi .card h4 {
+    font-size: 20px;
+}
+
+.wrap-visi-misi .misi .card p {
+    width: 80%;
+}
+
+.langkah-sertifikasi {
+    background-color: rgb(189, 212, 189);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 80px 25px 90px;
+}
+
+.langkah-sertifikasi h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 90%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: left;
+    padding: 20px 10px;
+}
+
+@media (min-width: 768px) {
+    .wrap-visi-misi .visi-misi {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .wrap-visi-misi .visi-misi .card {
+        flex-direction: row;
+        max-width: 768px;
+        min-width: 768px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wrap-visi-misi .visi-misi .card h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 190px;
+        width: 20%;
+        padding: 0px;
+        padding-left: 10px;
+    }
+    
+    .wrap-visi-misi .visi-misi .card .teks {
+        align-items: flex-start;
+        text-align: left;
+        width: 80%;
+        padding: 20px 20px 20px 20px;
+    }
+
+    .wrap-visi-misi .visi .visi-teks h1 {
+        font-size: 35px;
+    }
+
+    .wrap-visi-misi .visi .visi-teks p {
+        font-size: 19px;
+    }
+
+    .wrap-visi-misi .misi .misi-teks {
+        width: 100%;
+    }
+
+    .langkah-sertifikasi h2 {
+        font-size: 30px;
+    }
+
+    table {
+        width: 80%;
+    }
+
+    table tr th,td {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 1080px) {
+    .wrap-visi-misi .visi-misi .card {
+        flex-direction: row;
+        max-width: 1080px;
+        min-width: 1080px;
+        justify-content: center;
+        align-items: center;
+    }
+}

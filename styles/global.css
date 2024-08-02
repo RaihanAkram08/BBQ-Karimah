@@ -1,0 +1,464 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+:root {
+    --warna-satu: #d5b39a;
+    --warna-dua: #dddbdc;
+    --warna-tiga: #9fa895;
+    --warna-empat: #dcdcdc;
+    --warna-lima: #3d0c09;
+    --warna-enam: #0a3033;
+    --warna-tujuh: #b23e4a;
+    --warna-delapan: #aac8ae;
+    --warna-sembilan: #bdc7a2;
+    --warna-sepuluh: #97ab6e;
+    --warna-sebelas: #a1885f;
+    --warna-duabelas: #959c72;
+    --warna-tigabelas: #b5c89a;
+    --warna-empatbelas: #ebebeb;
+    --warna-limabelas: #e4e4e4;
+    --warna-enambelas: #d9dbd0;
+
+    --font-paragraf: "Lato", sans-serif;
+    --font-subjudul: "Open Sans", sans-serif;
+    --font-judul: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-judul);
+}
+
+h4,
+h5,
+h6 {
+    font-family: var(--font-subjudul);
+}
+
+p, li, a, div, th, td, figcaption, textarea {
+    font-family: var(--font-paragraf);
+    font-size: 16px;
+}
+
+.mySlides {display:none;}
+
+body {
+  align-items: center;
+  justify-content: center;
+}
+
+header .nav-mobile {
+    overflow: hidden;
+    background-color: #333;
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    align-items: center;
+  }
+
+header .nav-mobile a > img {
+    width: 100px;
+}
+
+header .nav-mobile #wrap-burger-menu {
+    display: none;
+  }
+  
+header .nav-mobile a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+header .nav-mobile a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 6px;
+  }
+  
+header .nav-mobile a:hover {
+    color: rgb(111, 111, 111);
+  }
+
+header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(rgba(125, 132, 126, 0.5), rgba(54, 94, 180, 0.7)), url(../assets/background-header.png);
+}
+
+header nav {
+    display: none;
+    justify-content: space-between;
+}
+
+header nav > img {
+    display: none;
+}
+
+header nav .teks {
+    display: none;
+}
+
+header nav .teks a {
+    text-decoration: none;
+    color: white;
+}
+
+header .nav-mobile .wrap-burger-menu {
+  width: 20%;
+}
+
+header .header-teks {
+    padding: 120px 50px 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+header .header-teks h1 {
+    color: rgb(255, 241, 241);
+}
+
+header .header-teks h3 {
+    color: rgb(255, 241, 241);
+}
+
+header .header-teks .button-cta {
+    display: flex;
+    gap: 20px;
+}
+
+header .header-teks .button-cta button:nth-child(1) {
+    background-color: white;
+    color: #7000ff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 13px;
+    display: flex;
+    gap: 8px;
+    cursor: pointer;
+}
+
+header .header-teks .button-cta button:nth-child(1):hover {
+    background-color: #7a52ae;
+    color: white;
+}
+
+header .header-teks .button-cta button:nth-child(2) {
+    background-color: #46dd2d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 13px;
+    display: flex;
+    gap: 8px;
+    cursor: pointer;
+}
+
+header .header-teks .button-cta button:nth-child(2):hover {
+    background-color: #469d36;
+    color: rgb(87, 87, 87);
+}
+
+
+
+.bantuan {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  padding: 70px 0px 80px ;
+  background-color: #eae8ce;
+}
+
+.bantuan .shop, .help, .about {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 30%;
+  gap: 20px;
+}
+
+.bantuan .shop h2 {
+  padding-left: 25px;
+}
+
+.bantuan .help h2 {
+  padding-left: 25px;
+}
+
+.bantuan .about h2 {
+  padding-left: 25px;
+}
+
+.bantuan .shop .menu-shop, .menu-help, .menu-about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  width: 100%;
+  gap: 5px;
+  padding-left: 25px;
+}
+
+.bantuan .menu-shop a {
+  text-decoration: none;
+  color: #222;
+  font-size: 14px;
+}
+
+.bantuan .menu-shop a:hover {
+  color: #805515;
+}
+
+.bantuan .menu-help a {
+  text-decoration: none;
+  color: #222;
+  font-size: 14px;
+}
+
+.bantuan .menu-help a:hover {
+  color: #805515;
+}
+
+.bantuan .menu-about a {
+  text-decoration: none;
+  color: #222;
+  font-size: 14px;
+}
+
+.bantuan .menu-about a:hover {
+  color: #805515;
+}
+
+footer {
+  background-color: #A3914F;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 40px 0 40px;
+  gap: 25px;
+}
+
+footer > p {
+  text-align: center;
+  font-size: 14px;
+}
+
+footer .wrap-social-media {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+footer .wrap-social-media .social-media {
+  display: flex;
+  gap: 10px;
+}
+
+footer .wrap-social-media .social-media .facebook {
+  text-decoration: none;
+  background-color: #54a1d8;
+  color: white;
+  border-radius: 50%;
+}
+
+footer .wrap-social-media .social-media .facebook:hover {
+  background-color: #4280ad;
+  color: rgb(213, 213, 213);
+}
+
+footer .wrap-social-media .social-media .twitter {
+  text-decoration: none;
+  color: black;
+}
+
+footer .wrap-social-media .social-media .twitter:hover {
+  color: rgb(90, 90, 90);
+}
+
+footer .wrap-social-media .social-media .instagram {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(212, 13, 212);
+  border-radius: 35%;
+}
+
+footer .wrap-social-media .social-media .instagram:hover  {
+  color: rgb(213, 213, 213);
+  background-color: rgb(165, 12, 165);
+}
+
+footer .wrap-social-media .social-media .youtube {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(255, 0, 76);
+  border-radius: 50%;
+}
+
+footer .wrap-social-media .social-media .youtube:hover {
+  color: rgb(213, 213, 213);
+  background-color: rgb(180, 0, 54);
+}
+
+@media (min-width: 768px) {
+
+  header {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  header nav {
+      display: none;
+      gap: 120px;
+  }
+
+  header nav .teks {
+    display: block;
+  }
+  
+  header nav .teks a {
+      text-decoration: none;
+      color: rgb(212, 109, 13);
+  }
+
+  header nav .teks a:hover {
+     border-bottom: 1px solid rgb(212, 109, 13);
+  }
+  
+  header .header-teks {
+      font-size: 25px;
+  }
+
+  .bantuan {
+        padding: 90px auto;
+    }
+
+  .bantuan .shop, .help, .about {
+    width: 30%;
+  }
+
+  .bantuan h2 {
+        font-size: 35px;
+    }
+
+  .bantuan .menu-shop a { 
+        font-size: 20px;
+    }
+
+  .bantuan .menu-help a { 
+        font-size: 20px;
+    }
+
+  .bantuan .menu-about a { 
+        font-size: 20px;
+    }
+
+  footer {
+        padding: 50px 20px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+  }
+
+  footer > p {
+        font-size: 18px;
+  }
+    
+  footer .wrap-social-media {
+        flex-direction: column;
+  }
+
+  footer .wrap-social-media p {
+        font-size: 18px;
+  }
+
+  footer .wrap-social-media .social-media {
+        justify-content: center;
+        align-items: center;
+  }
+
+  footer .wrap-social-media .social-media a {
+        font-size: 25px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    min-width: 1024px;
+    max-width: 2500px;
+    margin: 0 auto;
+  }
+
+  header {
+      gap: 30px;
+      padding-bottom: 100px;
+  }
+
+  header .nav-mobile {
+    display: none;
+  }
+
+  header nav {
+      padding: 20px 0px 20px 80px;
+      font-size: 25px;
+      display: flex;
+      gap: 220px;
+      justify-content: left;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #333;
+      transition: background-color 0.3s ease;
+      z-index: 9999;
+  }
+
+  header nav-top {
+    background-color: transparent;
+  } 
+  header nav-scrolled {
+    background-color: #333;
+  }
+
+  header nav .teks {
+    display: flex;
+    gap: 70px;
+    margin-right: 0px;
+    align-items: center;
+    font-size: 25px;
+    display: flex;
+  }
+
+  header nav > a {
+    display: block;
+    text-decoration: none;
+    color: white;
+  }
+
+  header nav > a:hover {
+    color: rgb(111, 111, 111);
+  }
+
+  header .header-teks {
+    padding-top: 200px;
+  }
+
+  .bantuan .shop, .help, .about {
+    width: 20%;
+  }
+
+  footer > p {
+    font-size: 20px;
+  }
+
+  footer .wrap-social-media p {
+      font-size: 20px;
+  }
+}

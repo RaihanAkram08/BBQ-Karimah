@@ -1,0 +1,497 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+.statistik {
+    display: flex;
+    flex-direction: column;
+    padding: 70px 0 45px;
+    background-color: #F1F2EB;
+}
+
+.statistik .card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+    margin: 0px auto 35px; 
+    padding: 20px 50px;
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #eee;
+}
+
+.statistik .card > h1 {
+    font-size: 25px;
+}
+
+.statistik .card h1 > span {
+    font-size: 70px;
+}
+
+.produk-dan-pelatihan {
+    padding: 50px 40px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #C5C8A8;
+}
+
+.produk-dan-pelatihan h1 {
+    font-size: 33px;
+    text-align: center;
+    color: white;
+    margin-bottom: 70px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1;
+    border-radius: 8px;
+    width: 100%;
+    padding-top: 20px;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 10px 35px 0px;
+  text-align: center;
+}
+
+.mySlides img, .mySlides video {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.numbertext {
+    color: #333;
+    font-size: 18px;
+    padding: 8px 12px;
+    position: absolute;
+}
+
+/* Caption text */
+.caption-text {
+  padding: 20px;
+  font-size: 20px;
+  color: #555;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    color: #888;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(164, 168, 139);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.daftar-produk {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0 60px;
+    gap: 20px;
+    background-color:  #A9B497;
+}
+
+.daftar-produk h1 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.daftar-produk .daftar-produk-satu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.daftar-produk .daftar-produk-satu figure {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e6e6;
+    padding-bottom: 30px;
+    width: 70%;
+    border-radius: 10px;
+}
+
+.daftar-produk .daftar-produk-satu figure img {
+    width: 100%;
+}
+
+.daftar-produk .daftar-produk-satu figure figcaption {
+    font-weight: 600;
+}
+
+.daftar-produk .daftar-produk-dua {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.daftar-produk .daftar-produk-dua figure {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e6e6;
+    padding-bottom: 30px;
+    width: 70%;
+    border-radius: 10px;
+}
+
+.daftar-produk .daftar-produk-dua img {
+    width: 100%;
+}
+
+.daftar-produk .daftar-produk-dua figure figcaption {
+    font-weight: 600;
+}
+
+.watermark {
+    display: flex;
+    justify-content: space-around;
+    background-color: #82a77a;
+    color: whitesmoke;
+    padding: 10px 0;
+}
+
+.testimoni {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0 70px;
+    gap: 25px;
+    background-color: #c7c793;
+}
+
+.testimoni h1 {
+    font-size: 28px;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimoni .komentar {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.testimoni .komentar .card-komentar {
+    width: 45%;
+    border: 1px solid black;
+    padding: 10px 30px 80px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #ccc;
+}
+
+.testimoni .komentar .card-komentar .user {
+    display: flex;
+    gap: 4.5px;
+    align-items: center;
+}
+
+.testimoni .komentar .card-komentar .user img {
+    width: 40px;
+}
+
+.testimoni .komentar .card-komentar .user .name p {
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+.testimoni .komentar .wrap-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 45%;
+}
+
+.testimoni .komentar button {
+    background-color: #f38d2d;
+    cursor: pointer;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.testimoni .komentar button:hover {
+    background-color: #c9711e;
+}
+
+.kerjasama {
+    background-color: #D3D8C1;
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    padding: 50px 0 60px;
+}
+
+.kerjasama h2 {
+    margin-bottom: 13px;
+}
+
+.pertanyaan {
+    background-color:  #A9B497;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px 0 80px;
+}
+
+.pertanyaan h2 {
+    margin-bottom: 50px;
+}
+
+.pertanyaan button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 80%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.5s;
+  }
+  
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  width: 80%;
+}
+
+.ri-arrow-up-s-line {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .statistik {
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .statistik .card {
+        width: 30%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .statistik .card h1 {
+        text-align: center;
+    }
+
+    .produk-dan-pelatihan {
+        padding: 80px 40px 90px;
+    }
+
+    .produk-dan-pelatihan h1 {
+        font-size: 50px;
+    }
+
+    .mySlides {
+        padding: 80px;
+    }
+
+    .numbertext {
+        left: 0;
+        right: 0;
+        top: 25px;
+        bottom: 0;
+    }
+
+    .daftar-produk {
+        gap: 70px;
+        padding: 90px 20px 100px;
+    }
+
+    .daftar-produk h1 {
+        margin-bottom: 0px;
+        font-size: 50px;
+    }
+
+    .daftar-produk .daftar-produk-satu {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .daftar-produk .daftar-produk-satu figure {
+        padding: 60px 40px 45px;
+        gap: 45px;
+    }
+
+    .daftar-produk .daftar-produk-satu figure figcaption {
+        font-size: 20px;
+    }
+
+    .daftar-produk .daftar-produk-dua {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .daftar-produk .daftar-produk-dua figure {
+        padding: 60px 40px 45px;
+        gap: 45px;
+    }
+
+    
+    .daftar-produk .daftar-produk-dua figure figcaption {
+        font-size: 20px;
+    }
+
+    .daftar-produk .card-produk img {
+        width: 100%;
+    } 
+
+    .testimoni {
+        padding: 90px 0 100px;
+    }
+
+    .testimoni h1 {
+        font-size: 50px;
+    }
+
+    .testimoni .komentar {
+        justify-content: center;
+    }
+
+    .testimoni .komentar .card-komentar {
+        width: 30%;
+    }
+
+    .testimoni .komentar .card-komentar > p {
+        font-size: 20px;
+    }
+
+    .testimoni .komentar .card-komentar .user .name h4 {
+        font-size: 23px;
+    }
+
+    .testimoni .komentar .card-komentar .user .name p {
+        font-size: 18px;
+    }
+
+    .testimoni .komentar .wrap-button {
+        width: 30%;
+    }
+
+    .kerjasama {
+        padding: 90px 20px 100px;
+    }
+
+    .kerjasama h2 {
+        font-size: 40px;
+    }
+
+    .pertanyaan {
+        padding: 90px 0px 100px;
+    }
+
+    .pertanyaan h2 {
+        font-size: 40px;
+    }
+
+    .pertanyaan .accordion {
+        font-size: 20px;
+    }
+
+    .pertanyaan .panel p {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1028px) {
+    body {
+        min-width: 1028px;
+        max-width: 2500px;
+        margin: 0 auto;
+    }
+
+    .daftar-produk .card-produk img {
+        min-width: 300px;
+        max-width: 400px;
+    } 
+
+    .numbertext {
+        left: 0;
+        right: 0;
+        top: 25px;
+        bottom: 0;
+    }
+}

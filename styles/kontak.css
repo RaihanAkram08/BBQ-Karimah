@@ -1,0 +1,273 @@
+body {
+    margin: 0 auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.lokasi {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 50px;
+    padding: 80px 50px;
+    background-color: #E0E5D8
+}
+
+
+.lokasi iframe {
+    width: 300px;
+    height: 300px;
+}
+
+.lokasi .teks {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 30px 25px;
+    width: 350px;
+    background-color: #849f8d;
+    border-radius: 10px;
+}
+
+.lokasi .teks p {
+    display: flex;
+    gap: 13px;
+    color: rgb(255, 241, 241);
+}
+
+.lokasi .teks a {
+    text-decoration: none;
+}
+
+.lokasi .teks a .instagram {
+    text-decoration: none;
+    color: rgb(255, 241, 241);
+    /* background-color: rgb(223, 21, 223); */
+    border-radius: 5px;
+}
+
+.lokasi .teks a .instagram:hover {
+    color: rgb(213, 213, 213);
+    /* background-color: rgb(165, 12, 165); */
+}
+
+.lokasi .teks a .whatsapp {
+    /* color: #6ACD64; */
+    color: rgb(255, 241, 241);
+}
+
+.lokasi .teks a .whatsapp:hover {
+    /* color: #5ebb59; */
+    color: rgb(213, 213, 213);
+}
+
+.lokasi .teks a .email {
+    /* color: rgb(250, 61, 61); */
+    color: rgb(255, 241, 241);
+}
+
+.lokasi .teks a .email:hover {
+    color: rgb(213, 213, 213);
+    /* color: rgb(201, 42, 42); */
+}
+
+.lokasi .teks a .article {
+    color: rgb(255, 241, 241);
+}
+
+.lokasi .teks a .article:hover {
+    color: rgb(213, 213, 213);
+}
+
+.lokasi .teks a .map {
+    color: rgb(255, 241, 241);
+}
+
+.lokasi .teks a .map:hover {
+    /* color: rgb(201, 42, 42); */
+    color: rgb(213, 213, 213);
+}
+
+.pesan {
+    background-color: #F1F2EB;
+    padding: 70px 10px;
+}
+
+.pesan .wrap-gambar-form .wrap-gambar img {
+    display: none;
+}
+
+.pesan form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 50px 20px 70px 30px;
+    align-items: center;
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.pesan form h1 {
+    text-align: center;
+}
+
+.pesan form label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 90%;
+}
+
+.pesan form label input {
+    padding: 5px 8px;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.pesan form label textarea {
+    height: 150px;
+    padding: 10px 13px;
+}
+
+.pesan form .wrap-button {
+    width: 90%;
+}
+
+.pesan form .wrap-button button {
+    background-color: #f38d2d;
+    cursor: pointer;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 15px;
+    margin-top: 25px;
+}
+
+.pesan form .wrap-button button:hover {
+    background-color: #c9711e;
+}
+
+.pesan form .wrap-image {
+    display: flex;
+    gap: 50px;
+    width: 90%;
+    margin-top: 35px;
+}
+
+.pesan form .wrap-image img {
+    width: 15%;
+    background-color: #eee;
+    padding: 5px;
+}
+
+
+
+@media (min-width: 768px) {
+    .lokasi {
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 0px;
+  
+    }
+
+    .lokasi .teks {
+        width: 300px;
+    }
+
+    .lokasi .teks p {
+        font-size: 20px;
+    }
+
+    .pesan {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding: 250px 90px 200px;
+        background-color: #D3D8C1;
+    }
+
+    .pesan .wrap-gambar-form {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .pesan .wrap-gambar-form .wrap-gambar {
+        display: flex;
+        width: 55%;
+    }
+
+    .pesan .wrap-gambar-form .wrap-gambar img {
+        width: 100%;
+        display: block;
+    }
+
+    .pesan form {
+        width: 45%;
+        padding-bottom: 20px;
+    }
+
+    .pesan .wrap-gambar-form form label {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .pesan form .wrap-button {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .pesan .wrap-gambar-form form .wrap-button button {
+        font-size: 17px;
+        width: 100%;
+    }
+
+    .pesan form .wrap-image {
+        display: flex;
+        gap: 50px;
+        width: 100%;
+        justify-content: center;
+        margin-top: 35px;
+    }
+
+    .pesan form .wrap-image img {
+        width: 15%;
+        background-color: #eee;
+    }
+
+}
+
+@media (min-width: 1028px) {
+
+    .lokasi {
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
+    .lokasi .teks {
+        width: 50%;
+    }
+
+    .lokasi .teks p {
+        font-size: 23px;
+    }
+
+    .lokasi iframe {
+        width: 50%;
+    }
+
+    .pesan .wrap-gambar-form form label {
+        font-size: 25px;
+    }
+
+    .pesan .wrap-gambar-form form .wrap-button button {
+        font-size: 20px;
+    }
+}

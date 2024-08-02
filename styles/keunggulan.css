@@ -1,0 +1,565 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.deskripsi-produk {
+    background-color: #C5C8A8;
+    padding: 10px 20px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.deskripsi-produk h1 {
+    text-align: center;
+    margin: 50px 0px 30px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1;
+    border-radius: 8px;
+    width: 100%;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+.mySlides p {
+    margin-top: 10px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.tujuan {
+  background-color:  #A9B497;
+  padding: 35px 20px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.tujuan .wrap-tujuan {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.tujuan .wrap-tujuan .card {
+  border: 1px solid black;
+  background-color: #ddd;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 8px 30px;
+}
+
+.tujuan .wrap-tujuan .card h3 {
+  border-bottom: 1.7px solid black;
+  padding-bottom: 5px;
+  font-size: 19px;
+}
+
+.tujuan .wrap-tujuan .card ul {
+  padding-left: 15px;
+}
+
+.value {
+  padding: 25px 20px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  background-color: #d1d4bb;
+}
+
+.value .wrap-quantum {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.value .wrap-quantum .card {
+  border: 1px solid black;
+  background-color: #ddd;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 8px 30px;
+}
+
+.value .wrap-quantum .card h3 {
+  border-bottom: 1.7px solid black;
+  padding-bottom: 5px;
+}
+
+
+.promo {
+  padding: 70px 0px 80px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color:  #bad5b7;
+}
+
+.promo .wrap-promo {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.promo .wrap-promo .card {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.promo .wrap-promo .card img {
+  width: 100%;
+}
+
+.promo .wrap-promo .card .teks {
+  padding: 15px 20px 30px;
+  margin: 0px;
+  background-color: rgb(216, 216, 216);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.promo .wrap-promo .card .teks .barang {
+  display: flex;
+  flex-direction: column;
+}
+
+.promo .wrap-promo .card .teks .harga {
+  display: flex;
+  flex-direction: column;
+}
+
+.promo .wrap-promo .card .teks .harga h4 {
+  color: #f00404;
+}
+
+.promo .wrap-promo .card .teks .harga .potongan-harga {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.promo .wrap-promo .card .teks .harga .potongan-harga h5 {
+  color: #929292;
+}
+
+.promo .wrap-promo .card .teks .harga button {
+  background-color: #FF9839;
+  color: white;
+  border: none;
+  padding: 8px 13px;
+  cursor: pointer;
+  border-radius: 30px;
+  margin-top: 15px;
+}
+
+.promo .wrap-promo .card .teks .harga button:hover {
+  background-color: #d47012;
+}
+
+.referal {
+  border: 1px solid black;
+  padding: 25px 20px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  border-radius: 8px 20px;
+  background-color: #ddd;
+}
+
+.referal .code-referal {
+  display: flex;
+}
+
+.referal .code-referal input {
+  padding: 5px 8px;
+  text-align: center;
+  border-radius: 0px;
+  border: 1px solid black;
+}
+
+.referal .code-referal button {
+  display: flex;
+  gap: 8px;
+  padding: 5px 8px;
+  border: none;
+  align-items: center;
+  color: white;
+  background-color: #2462ff;
+  cursor: pointer;
+}
+
+.referal .code-referal button:hover {
+  background-color: #5f84e0;
+}
+
+.paket-edukasi {
+  background-color: #A9B497;
+  padding: 40px 0px 100px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.paket-edukasi .wrap-paket-edukasi {
+  display: flex;
+  flex-direction: column;
+  gap:50px;
+}
+
+.paket-edukasi .wrap-paket-edukasi .bundling-perpus {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.paket-edukasi .wrap-paket-edukasi .bundling-perpus .card {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.paket-edukasi .wrap-paket-edukasi .bundling-perpus .card .wrap-image {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.paket-edukasi .wrap-paket-edukasi .bundling-perpus .card .wrap-image img {
+  width: 100%;
+}
+
+.paket-edukasi .wrap-paket-edukasi .bundling-perpus .card .teks {
+  background-color: rgb(216, 216, 216);
+  padding: 30px 25px 35px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.paket-edukasi .wrap-paket-edukasi .bundling-perpus .card .teks .barang {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.paket-edukasi .wrap-paket-edukasi .bundling-perpus .card .teks .barang h5 {
+  color: #929292;
+}
+
+.paket-edukasi .wrap-paket-edukasi .bundling-perpus .card .teks .barang .harga {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.paket-edukasi .wrap-paket-edukasi .bundling-perpus .card .teks .barang .harga .satu {
+  color: red;
+}
+
+.paket-edukasi .wrap-paket-edukasi .bundling-perpus .card .teks .barang button {
+  background-color: #FF9839;
+  color: white;
+  border: none;
+  padding: 8px 13px;
+  cursor: pointer;
+  border-radius: 30px;
+  margin-top: 15px;
+}
+
+.paket-edukasi .wrap-paket-edukasi .bundling-perpus .card .teks .barang button:hover {
+  background-color: #d47012;
+}
+
+.paket-edukasi .wrap-paket-edukasi .bundling-perpus .card .teks ul {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+@media (min-width: 768px) {
+
+  .deskripsi-produk h1 {
+    font-size: 40px;
+  }
+
+  .slideshow-container {
+    min-width: 700px;
+    max-width: 700px;
+  }
+
+  .slideshow-container .mySlides h2 {
+    font-size: 30px;
+  }
+
+  .slideshow-container .mySlides p {
+    font-size: 20px;
+  }
+
+  .dot-container {
+    min-width: 700px;
+    max-width: 700px;
+  }
+
+  .tujuan h1 {
+    font-size: 40px;
+  }
+
+  .tujuan .wrap-tujuan {
+    min-width: 768px;
+    max-width: 768px;
+  }
+
+  .tujuan .wrap-tujuan .card h3 {
+    font-size: 25px;
+  }
+
+  .tujuan .wrap-tujuan .card ul {
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 25px;
+  }
+
+  .value h1 {
+    font-size: 40px;
+  }
+
+  .value h2 {
+    font-size: 30px;
+  }
+
+  .value .wrap-quantum {
+    min-width: 768px;
+    max-width: 768px;
+  }
+
+  .value .wrap-quantum .card h3 {
+    font-size: 25px;
+  }
+
+  .value .wrap-quantum .card p {
+    font-size: 25px;
+  }
+
+  .promo h1 {
+    font-size: 40px;
+  }
+
+  .promo .wrap-promo .card {
+    min-width: 450px;
+    max-width: 450px;
+  }
+
+  .promo .wrap-promo .card .teks .barang h3 {
+    font-size: 25px;
+  }
+
+  .promo .wrap-promo .card .teks .barang h4 {
+    font-size: 20px;
+  }
+
+  .promo .wrap-promo .card .teks .harga > h4 {
+    font-size: 35px;
+  }
+  
+  .promo .wrap-promo .card .teks .harga .potongan-harga h4 {
+    font-size: 20px;
+  }
+  
+  .promo .wrap-promo .card .teks .harga .potongan-harga h5 {
+    font-size: 16px;
+  }
+  
+  .promo .wrap-promo .card .teks .harga button {
+    width: 140px;
+  }
+
+  .referal {
+    width: 650px;
+  }
+
+  .referal p {
+    font-size: 20px;
+  }
+
+  .paket-edukasi > h1 {
+    font-size: 40px;
+  }
+
+  .paket-edukasi .wrap-paket-edukasi {
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .paket-edukasi .wrap-paket-edukasi h1 {
+    font-size: 35px;
+  }
+
+  .paket-edukasi .wrap-paket-edukasi .bundling-perpus {
+    width: 50%;
+  }
+
+  .paket-edukasi .wrap-paket-edukasi .bundling-perpus .card .teks .barang .harga .dua {
+    font-size: 27px;
+  }
+
+  .paket-edukasi .wrap-paket-edukasi .bundling .wrap-image img {
+    min-height: 400px;
+    max-height: 400px;
+  }
+
+  .paket-edukasi .wrap-paket-edukasi .perpus .wrap-image img {
+    min-height: 400px;
+    max-height: 400px;
+  }
+
+}
+
+@media (min-width: 1080px) {
+  .slideshow-container {
+    min-width: 1080px;
+    max-width: 1080px;
+  }
+
+  .dot-container {
+    min-width: 1080px;
+    max-width: 1080px;
+  }
+
+  .tujuan .wrap-tujuan {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    min-width: 1080px;
+    max-width: 1400px;
+  }
+
+  .tujuan .wrap-tujuan .card {
+    width: 45%;
+  }
+
+  .value .wrap-quantum {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    min-width: 1080px;
+    max-width: 1400px;
+  }
+
+  .value .wrap-quantum .card {
+    width: 45%;
+  }
+
+  .promo .promo-satu {
+    flex-direction: row;
+  }
+
+  .promo .promo-satu .card {
+    min-width: 350px;
+    max-width: 350px;
+  }
+
+  .promo .promo-dua {
+    flex-direction: row;
+  }
+
+  .promo .promo-dua .card {
+    min-width: 540px;
+    max-width: 540px;
+  }
+
+  .referal {
+    width: 900px;
+  }
+
+  .paket-edukasi .wrap-paket-edukasi {
+    gap: 0px;
+  }
+
+  .paket-edukasi .wrap-paket-edukasi .bundling-perpus {
+    min-width: 600px;
+    max-width: 600px;
+  }
+}
